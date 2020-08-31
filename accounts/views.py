@@ -32,7 +32,7 @@ def register(request):
                         email=email
                     )
                     auth.login(request, user)
-                    messages.success(request, 'Successfully reigistered!')
+                    messages.success(request, 'Successfully reigistered')
                     return redirect('index')
         else:
             messages.error(request, 'Passwords don\'t match')
